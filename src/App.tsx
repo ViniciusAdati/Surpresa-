@@ -168,7 +168,9 @@ export default function App() {
                 {formatTime(progress)} / {formatTime(duration)}
               </div>
               <div className="player-track">
-                <strong>Largado As Traças (Acústico)</strong>
+                <strong>
+                  Mulher Maravilha - Terra Celta feat. Allice Tirolla
+                </strong>
                 <p>No seu dispositivo</p>
               </div>
             </div>
