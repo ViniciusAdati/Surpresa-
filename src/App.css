@@ -290,3 +290,9 @@ body {
     font-size: 1.5rem;
   }
 }
+.counting-label {
+  color: #d1b3d8;
+  font-size: 0.85rem;
+  margin-bottom: 0.6rem;
+  font-style: italic;
+}

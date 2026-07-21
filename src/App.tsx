@@ -126,6 +126,7 @@ export default function App() {
 
         <p className="subtitle">🗓️ Juntos desde 11 de julho de 2025</p>
 
+        <p className="counting-label">Já fazem</p>
         <div className="cards-container">
           <div className="card">
             <span className="card-number">{time.years}</span>
@@ -146,6 +147,8 @@ export default function App() {
           {String(time.minutes).padStart(2, "0")} :{" "}
           {String(time.seconds).padStart(2, "0")}
         </div>
+        <br></br>
+        <p className="counting-label">que eu te amo</p>
       </div>
 
       <div className="rest-section">
