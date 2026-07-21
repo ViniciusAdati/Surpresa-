@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+body {
+  background: linear-gradient(180deg, #1a0b1c 0%, #2a1130 50%, #150518 100%);
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  max-width: none;
+  padding: 0;
+  margin: 0;
+  text-align: initial;
+  display: block;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+}
+.hero-section {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.rest-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 3rem;
+}
+
+.couple-photo {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid rgba(255, 105, 180, 0.5);
+  box-shadow: 0 0 25px rgba(255, 105, 180, 0.4);
+  margin-bottom: -1.5rem;
+  z-index: 1;
+}
+
+.heart {
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 0 20px rgba(255, 105, 180, 0.6));
+  animation: pulse 1.5s infinite ease-in-out;
+  z-index: 2;
+}
+
+.title {
+  font-family: "Playfair Display", serif;
+  font-size: 2.2rem;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.subtitle {
+  color: #d1b3d8;
+  font-size: 0.9rem;
+  margin-bottom: 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cards-container {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 105, 180, 0.2);
+  border-radius: 16px;
+  padding: 1.2rem 0.5rem;
+  width: 85px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+}
+
+.card-number {
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  color: #ffb3d9;
+  margin-bottom: 0.2rem;
+}
+
+.card-label {
+  font-size: 0.65rem;
+  letter-spacing: 2px;
+  color: #d1b3d8;
+  font-weight: 600;
+}
+
+.time-display {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 105, 180, 0.3);
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  font-variant-numeric: tabular-nums;
+  color: #ffb3d9;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 0.8rem;
+  margin: 2rem 0;
+}
+
+.divider-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 105, 180, 0.6),
+    transparent
+  );
+}
+
+.divider-heart {
+  color: #ff69b4;
+  font-size: 1.1rem;
+  filter: drop-shadow(0 0 6px rgba(255, 105, 180, 0.7));
+}
+
+.letter-section {
+  width: 100%;
+}
+
+.envelope {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 105, 180, 0.3);
+  border-radius: 20px;
+  padding: 2rem 1.5rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.envelope:hover {
+  transform: scale(1.02);
+}
+
+.envelope-icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 0.8rem;
+}
+
+.envelope p {
+  color: #ffb3d9;
+  font-size: 1rem;
+}
+
+.player-bar {
+  background: #1a1a1a;
+  border: 1px solid rgba(255, 105, 180, 0.3);
+  border-radius: 14px;
+  padding: 0.8rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  animation: fadeIn 0.5s ease;
+}
+
+.player-controls {
+  display: flex;
+  align-items: center;
+}
+
+.player-btn {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.player-time {
+  color: #b3b3b3;
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+
+.player-track {
+  flex: 1;
+  text-align: left;
+  overflow: hidden;
+}
+
+.player-track strong {
+  display: block;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.player-track p {
+  font-size: 0.75rem;
+  color: #b3b3b3;
+}
+
+.message-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 105, 180, 0.3);
+  border-radius: 20px;
+  padding: 1.5rem;
+  width: 100%;
+}
+
+.message-card p {
+  font-style: italic;
+  line-height: 1.6;
+  color: #f0d9e8;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 380px) {
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .couple-photo {
+    width: 120px;
+    height: 120px;
+  }
+
+  .card {
+    width: 75px;
+  }
+
+  .card-number {
+    font-size: 1.5rem;
+  }
+}
